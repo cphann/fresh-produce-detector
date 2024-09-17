@@ -7,7 +7,7 @@ This project  focuses on building an accessible and automated system to classify
 1. **Image Classification:** A model was trained to classify images of produce as either "fresh" or "rotten" with an accuracy of approximately 97.2%.
 2. **Object Detection:** We implemented a Faster R-CNN model to detect specific fruits and vegetables in images, which currently supports apples, bananas, oranges, and carrots.
 
----
+
 
 ## Dataset
 The dataset used for classification was obtained from the “Fruits and Vegetables” dataset on Kaggle, contributed by Mukhriddin Mukhiddinow. The dataset contains 12,000 images of various fruits and vegetables in fresh and rotten states.
@@ -17,7 +17,7 @@ The dataset used for classification was obtained from the “Fruits and Vegetabl
 - **Types of Produce:** 10 types of fruits and 10 types of vegetables
 - **Dataset Structure:** Initially structured by type and freshness; we restructured it to a binary classification format with two main classes: "fresh" and "rotten".
 
----
+
 
 ## Classification Model
 For the classification task, we used a fine-tuned `resnet18` model from PyTorch:
@@ -37,7 +37,7 @@ For the classification task, we used a fine-tuned `resnet18` model from PyTorch:
 - **Most Misclassified:** Fresh potatoes (163 images misclassified as rotten).
 - **Least Misclassified:** Rotten mangos (32 images misclassified as fresh).
 
----
+
 
 ## Object Detection
 The object detection component uses a pre-trained Faster R-CNN model, which was originally trained on the COCO dataset.
@@ -54,15 +54,19 @@ The object detection component uses a pre-trained Faster R-CNN model, which was 
 - Misidentification of spoiled produce.
 - Difficulty detecting produce in cluttered or overlapping scenarios.
 
----
+
 
 ## Future Enhancements
 1. **Custom Object Detection Dataset:** Collecting and annotating a custom dataset with bounding boxes for a wider variety of fruits and vegetables to improve detection accuracy.
 2. **Real-Time Detection:** Integrating real-time detection with sensor technology for use in production environments.
 3. **Training Custom Models:** Exploring training our own model from scratch for both classification and object detection to better handle edge cases.
 
----
+
 
 ## Conclusion
 This project successfully developed a robust system for classifying fresh and spoiled produce with high accuracy and implemented basic object detection for certain types of produce. With further advancements and data collection, this model could have a wide range of real-world applications, particularly in the agriculture and food processing industries.
+
+## Contributors:
+- Chi Phan 
+- Aleks Jacewicz
 
